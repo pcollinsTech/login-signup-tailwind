@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #c1bdba;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2 {
+  font-weight: 300;
+}
+
+input {
+  background: transparent;
+  border-color: #c1bdba;
+  color: white;
+}
+button {
+  border: none;
+  outline: none;
+}
+input:required {
+  border-color: red;
+}
+.wrapper {
+  position: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  background-color: #24323d;
+  width: 500px;
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    position: fixed;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-left: 0;
+    background-color: #24323d;
+  }
+}
